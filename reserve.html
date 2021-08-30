@@ -1,10 +1,65 @@
----
-title: Boostrap Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<section class="pt-9 pb-13 pt-sm-11 pb-sm-12 pb-lg-14 text-center">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Boostrap Index
+  </title>
+  <script src="./assets/js/font.js"></script>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
+  
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-success py-4 py-lg-5">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/images/DOYOGA-logo.png" alt="logo" width="96px" height="31px">
+      </a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-3" aria-current="page" href="course.html">課程介紹</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#">瑜珈空間</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#" tabindex="-1" aria-disabled="true">當月課表</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <a href="#" class="btn btn-outline-primary rounded-4 me-3">立即預約</a>
+          <a href="#" class="btn btn-outline-primary rounded-4">聯絡我們</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <ul class="text-center position-fixed translate-middle-y top-50 end-0  me-3 z-30 d-none d-lg-block">
+    <li class="me-2 lh-1 mb-2"><a href="#" class="fa-3x link-primary">
+        <i class="fab fa-facebook"></i>
+      </a></li>
+    <li class="me-2 lh-1 mb-2"><a href="#" class="fa-3x link-primary">
+        <i class="fab fa-instagram"></i>
+      </a></li>
+    <li class="me-2 lh-1 mb-2"><a href="#" class="fa-3x link-primary">
+        <i class="fab fa-line"></i>
+      </a></li>
+  </ul>
+  <section class="pt-9 pb-13 pt-sm-11 pb-sm-12 pb-lg-14 text-center">
     <div class="container ">
         <h1 class="h3 fw-regular mb-6 mb-sm-3">立即預約</h1>
         <div class="row justify-content-center text-white mb-7 mb-sm-6 mb-lg-7">
@@ -192,3 +247,55 @@ current: index
         </div>
     </div>
 </section>
+
+    <footer class="bg-primary pt-6 pt-md-7 pb-7">
+      <div class="container mb-6 mb-sm-7">
+        <div class="row align-items-center ">
+          <div class="col-xl-8 mb-2 md-sm-0">
+            <h2 class="h4 text-white">現在訂閱，獲得課程優惠碼！</h2>
+          </div>
+          <div class="col-sm-6 col-xl-4">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="輸入您的電子信箱">
+              <button class="btn btn-secondary text-white" type="button">訂閱</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-bottom border-white mb-6 mb-sm-7"></div>
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <img src="./assets/images/DOYOGA.png" alt="logo" width="96px" height="31px">
+          <ul class="d-flex">
+            <li class="mx-2"><a href="#" class="h4 link-white">
+                <i class="fab fa-facebook"></i>
+              </a></li>
+            <li class="mx-2"><a href="#" class="h4 link-white">
+                <i class="fab fa-instagram"></i>
+              </a></li>
+            <li class="ms-2"><a href="#" class="h4 link-white">
+                <i class="fab fa-line"></i>
+              </a></li>
+          </ul>
+        </div>
+        <div class="d-sm-flex">
+          <ul class="mb-2 mb-sm-0">
+            <li><a href="course.html" class="fw-light link-white py-1">課程介紹</a></li>
+            <li><a href="#" class="fw-light link-white py-1">瑜珈空間</a></li>
+            <li><a href="#" class="fw-light link-white py-1">當月課表</a></li>
+          </ul>
+          <p class="text-white mx-auto align-self-end">© 2021. All Rights Reserved.</p>
+        </div>
+
+
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper@7.0.1/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
