@@ -1,0 +1,14 @@
+.h-582 {
+  height: 582px;
+}
+.h-420 {
+  height: 420px;
+}
+.h-628 {
+  height: 628px;
+}
+@include media-breakpoint-between(sm, md) {
+  .h-sm-md-252 {
+    height: 252px;
+  }
+}

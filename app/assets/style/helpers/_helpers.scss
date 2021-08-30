@@ -1,0 +1,80 @@
+.img {
+    &-product {
+        height: 210px;
+        @include media-breakpoint-up(sm) {
+            height: 266px;
+        }
+        @include media-breakpoint-up(xl) {
+            height: 444px;
+        }
+        &-sm {
+            height: 210px;
+            @include media-breakpoint-up(sm) {
+                height: 117px;
+            }
+            @include media-breakpoint-up(xl) {
+                height: 207px;
+            }
+        }
+    }
+    &-course {
+        height: 165px;
+        width: 100%;
+        @include media-breakpoint-up(md) {
+            height: 150px;
+        }
+        @include media-breakpoint-up(lg) {
+            height: 445px;
+        }
+    }
+    &-plan {
+        object-fit: cover;
+        height: 243px;
+        @include media-breakpoint-up(sm) {
+            max-height: 238px;
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
+        }
+        @include media-breakpoint-up(lg) {
+            max-height: 243px;
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+    }
+    &-course{
+        height: 218px;
+        @include media-breakpoint-up(md){
+            height: 341px;
+        }
+    }
+    &-196{
+        height: 196px;
+    }
+}
+.click-card{
+    cursor: pointer;
+    border: transparent 4px solid;
+    &:hover{
+        border-color: $primary;
+    }
+}
+.click {
+    cursor: pointer;
+    &:focus {
+        border-color: $white;
+        color: $white;
+    }
+}
+.my-modal-width{
+    max-width: 920px;
+    @include media-breakpoint-down(lg){
+        max-width: 690px;
+    }
+    @include media-breakpoint-down(md){
+        max-width: 345px;
+    }
+}
