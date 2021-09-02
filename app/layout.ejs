@@ -8,18 +8,19 @@
   <title>
     <%- title %>
   </title>
-  <script src="./assets/js/font.js"></script>
-  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css">
-  
+  <link rel="stylesheet" href="./assets/style/all.css">
+
 
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-success py-4 py-lg-5">
+  <nav class="navbar navbar-expand-lg navbar-light bg-success py-4 py-lg-5 position-sticky">
     <div class="container">
       <a class="navbar-brand" href="index.html">
         <img src="./assets/images/DOYOGA-logo.png" alt="logo" width="96px" height="31px">
@@ -32,18 +33,18 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link px-3" aria-current="page" href="course.html">課程介紹</a>
+            <a class="nav-link px-3  link-hover" href="course.html">課程介紹</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-3" href="#">瑜珈空間</a>
+            <a class="nav-link px-3  link-hover" href="environment.html">瑜珈空間</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-3" href="#" tabindex="-1" aria-disabled="true">當月課表</a>
+            <a class="nav-link px-3 link-hover" href="curriculum.html">當月課表</a>
           </li>
         </ul>
         <form class="d-flex">
-          <a href="#" class="btn btn-outline-primary rounded-4 me-3">立即預約</a>
-          <a href="#" class="btn btn-outline-primary rounded-4">聯絡我們</a>
+          <a href="reservation.html" class="btn btn-outline-primary rounded-4 me-3">立即預約</a>
+          <a href="contact.html" class="btn btn-outline-primary rounded-4">聯絡我們</a>
         </form>
       </div>
     </div>
@@ -65,7 +66,7 @@
       <div class="container mb-6 mb-sm-7">
         <div class="row align-items-center ">
           <div class="col-xl-8 mb-2 md-sm-0">
-            <h2 class="h4 text-white">現在訂閱，獲得課程優惠碼！</h2>
+            <h2 class="h3 fw-medium text-white">現在訂閱，獲得課程優惠碼！</h2>
           </div>
           <div class="col-sm-6 col-xl-4">
             <div class="input-group">
@@ -93,9 +94,9 @@
         </div>
         <div class="d-sm-flex">
           <ul class="mb-2 mb-sm-0">
-            <li><a href="course.html" class="fw-light link-white py-1">課程介紹</a></li>
-            <li><a href="#" class="fw-light link-white py-1">瑜珈空間</a></li>
-            <li><a href="#" class="fw-light link-white py-1">當月課表</a></li>
+            <li><a href="course.html" class="fw-light text-white link-hover py-1">課程介紹</a></li>
+            <li class="my-2"><a href="environment.html" class="fw-light text-white link-hover py-1">瑜珈空間</a></li>
+            <li><a href="curriculum.html" class="fw-light text-white py-1">當月課表</a></li>
           </ul>
           <p class="text-white mx-auto align-self-end">© 2021. All Rights Reserved.</p>
         </div>
@@ -103,10 +104,11 @@
 
       </div>
     </footer>
-
+    
     <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper@7.0.1/swiper-bundle.min.js"></script> -->
     <script src="./assets/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper@7.0.1/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>

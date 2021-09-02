@@ -1,65 +1,63 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".design", {
   slidesPerView: 2,
-	spaceBetween: 15,
-	grid: {
-		rows: 2,
-		fill: 'row',
-	},
+  slidesPerColumnFill: 'row',
+  slidesPerColumn: 2,
+  spaceBetween: 15,
   autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-  breakpoints: {
-    768: {
-			slidesPerView: 2,
-			grid: {
-				rows: 2,
-				fill: 'row',
-			},
-			spaceBetween: 30,
-		},
-    992: {
-      slidesPerView: 1.5,
-      grid: {
-        rows: 1.5,
-        fill: 'column',
-      },
-      spaceBetween: 30,
-    },
-  },
-});
-
-var swiper = new Swiper(".comment", {
-  slidesPerView: 1,
-  grid: {
-    rows: 3,
-    fill: 'column',
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    delay: 3000,
+    disableOnInteraction: false,
   },
   breakpoints: {
     567: {
       slidesPerView: 2,
-      grid: {
-        rows: 2,
-        fill: 'column',
-      },
+      slidesPerColumnFill: 'row',
+      slidesPerColumn: 2,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 1.4,
+      spaceBetween: 30,
+      slidesPerColumnFill: 'row',
+      slidesPerColumn: 1,
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      allowTouchMove: true,
+    },
+  }
+});
+
+var swiper = new Swiper(".comment", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  slidesPerColumnFill: 'row',
+  slidesPerColumn: 3,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    567: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      slidesPerColumnFill: 'row',
+      slidesPerColumn: 2,
     },
     992: {
       slidesPerView: 3,
-      grid: {
-        rows: 2,
-        fill: 'column',
-      },
+      spaceBetween: 30,
+      slidesPerColumnFill: 'row',
+      slidesPerColumn: 2,
     },
   },
 });
 
 // 選擇課程階級
 var swiper = new Swiper(".reservation", {
-  slidesPerView: 1,
+  // slidesPerView: 1,
   grid: {
     rows: 3,
     fill: 'column',
@@ -72,6 +70,28 @@ var swiper = new Swiper(".reservation", {
     992: {
       slidesPerView: 3,
       spaceBetween: 20,
+
+    },
+  },
+});
+
+// 課程推薦
+
+var swiper = new Swiper(".recommend", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30,
 
     },
   },

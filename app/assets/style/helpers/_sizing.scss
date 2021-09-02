@@ -1,14 +1,35 @@
-.h-582 {
-  height: 582px;
-}
-.h-420 {
-  height: 420px;
-}
-.h-628 {
-  height: 628px;
-}
-@include media-breakpoint-between(sm, md) {
-  .h-sm-md-252 {
-    height: 252px;
+.img {
+  &-course {
+      height: 165px;
+      @include media-breakpoint-up(md) {
+          height: 150px;
+      }
+      @include media-breakpoint-up(lg) {
+          height: 445px;
+      }
+  }
+  &-plan {
+      height: 243px;
+      @include media-breakpoint-up(md) {
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+          border-top-left-radius: 16px;
+          border-bottom-left-radius: 16px;
+      }
+      @include media-breakpoint-up(lg) {
+          border-top-right-radius: 16px;
+          border-top-left-radius: 16px;
+          border-bottom-right-radius: 0px;
+          border-bottom-left-radius: 0px;
+      }
+  }
+  &-yoga{
+      height: 218px;
+      @include media-breakpoint-up(md){
+          height: 341px;
+      }
+  }
+  &-teachers {
+      height: 196px;
   }
 }

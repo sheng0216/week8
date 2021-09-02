@@ -1,0 +1,14 @@
+@include media-breakpoint-up(sm){
+    @each $key, $ratio in $aspect-ratios {
+        .ratio-sm-#{$key} {
+          --#{$variable-prefix}aspect-ratio: #{$ratio};
+        }
+      }
+}
+@include media-breakpoint-up(lg){
+    @each $key, $ratio in $aspect-ratios {
+        .ratio-sm-#{$key} {
+          --#{$variable-prefix}aspect-ratio: #{$ratio};
+        }
+      }
+}
