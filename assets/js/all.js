@@ -1,102 +1,68 @@
+// const elem = document.querySelector('input[name="datepicker"]');
+// const datepicker = new Datepicker(elem, {
+//     autohide: true,
+// }); 
+"use strict";
 "use strict";
 
-var elem = document.querySelector('input[name="datepicker"]');
-var datepicker = new Datepicker(elem, {});
-"use strict";
-
-(function (d) {
-  var config = {
-    kitId: 'wvk5prl',
-    scriptTimeout: 3000,
-    async: true
-  },
-      h = d.documentElement,
-      t = setTimeout(function () {
-    h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
-  }, config.scriptTimeout),
-      tk = d.createElement("script"),
-      f = false,
-      s = d.getElementsByTagName("script")[0],
-      a;
-  h.className += " wf-loading";
-  tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
-  tk.async = true;
-
-  tk.onload = tk.onreadystatechange = function () {
-    a = this.readyState;
-    if (f || a && a != "complete" && a != "loaded") return;
-    f = true;
-    clearTimeout(t);
-
-    try {
-      Typekit.load(config);
-    } catch (e) {}
-  };
-
-  s.parentNode.insertBefore(tk, s);
-})(document);
-"use strict";
-
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".design", {
   slidesPerView: 2,
+  slidesPerColumnFill: 'row',
+  slidesPerColumn: 2,
   spaceBetween: 15,
-  grid: {
-    rows: 2,
-    fill: 'row'
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
+  breakpoints: {
+    567: {
+      slidesPerView: 2,
+      slidesPerColumnFill: 'row',
+      slidesPerColumn: 2,
+      spaceBetween: 30
+    },
+    992: {
+      slidesPerView: 1.4,
+      spaceBetween: 30,
+      slidesPerColumnFill: 'row',
+      slidesPerColumn: 1,
+      allowSlideNext: true,
+      allowSlidePrev: true,
+      allowTouchMove: true
+    }
+  }
+});
+var swiper = new Swiper(".comment", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  slidesPerColumnFill: 'row',
+  slidesPerColumn: 3,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   },
   autoplay: {
     delay: 3000,
     disableOnInteraction: false
   },
   breakpoints: {
-    768: {
-      slidesPerView: 2,
-      grid: {
-        rows: 2,
-        fill: 'row'
-      },
-      spaceBetween: 30
-    },
-    992: {
-      slidesPerView: 1.5,
-      grid: {
-        rows: 1.5,
-        fill: 'column'
-      },
-      spaceBetween: 30
-    }
-  }
-});
-var swiper = new Swiper(".comment", {
-  slidesPerView: 1,
-  grid: {
-    rows: 3,
-    fill: 'column'
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  breakpoints: {
     567: {
       slidesPerView: 2,
-      grid: {
-        rows: 2,
-        fill: 'column'
-      }
+      spaceBetween: 30,
+      slidesPerColumnFill: 'row',
+      slidesPerColumn: 2
     },
     992: {
       slidesPerView: 3,
-      grid: {
-        rows: 2,
-        fill: 'column'
-      }
+      spaceBetween: 30,
+      slidesPerColumnFill: 'row',
+      slidesPerColumn: 2
     }
   }
 }); // 選擇課程階級
 
 var swiper = new Swiper(".reservation", {
-  slidesPerView: 1,
+  // slidesPerView: 1,
   grid: {
     rows: 3,
     fill: 'column'
@@ -109,6 +75,25 @@ var swiper = new Swiper(".reservation", {
     992: {
       slidesPerView: 3,
       spaceBetween: 20
+    }
+  }
+}); // 課程推薦
+
+var swiper = new Swiper(".recommend", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    992: {
+      slidesPerView: 4,
+      spaceBetween: 30
     }
   }
 });
