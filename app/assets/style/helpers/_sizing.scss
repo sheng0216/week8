@@ -10,7 +10,7 @@
   }
   &-plan {
       height: 243px;
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(sm) {
           border-top-right-radius: 0px;
           border-bottom-right-radius: 0px;
           border-top-left-radius: 16px;
