@@ -26522,7 +26522,7 @@ a {
   height: 243px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .img-plan {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
